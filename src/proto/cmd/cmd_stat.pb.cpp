@@ -106,9 +106,11 @@ bool AISnapshotEntitySkillCycle::MergePartialFromCodedStream(
   }
 success:
   // @@protoc_insertion_point(parse_success:proto.AISnapshotEntitySkillCycle)
+  DiscardUnknownFields();
   return true;
 failure:
   // @@protoc_insertion_point(parse_failure:proto.AISnapshotEntitySkillCycle)
+  DiscardUnknownFields();
   return false;
 #undef DO_
 }
@@ -144,9 +146,9 @@ void AISnapshotEntitySkillCycle::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormatLite::WriteUInt32(15, this->skill_id(), output);
   }
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if ((_internal_metadata_.have_unknown_fields() &&  false)) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
+        (false   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
   }
   // @@protoc_insertion_point(serialize_end:proto.AISnapshotEntitySkillCycle)
 }
@@ -183,9 +185,9 @@ void AISnapshotEntitySkillCycle::SerializeWithCachedSizes(
     target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(15, this->skill_id(), target);
   }
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if ((_internal_metadata_.have_unknown_fields() &&  false)) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
+        (false   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
   }
   // @@protoc_insertion_point(serialize_to_array_end:proto.AISnapshotEntitySkillCycle)
   return target;
@@ -195,10 +197,10 @@ size_t AISnapshotEntitySkillCycle::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:proto.AISnapshotEntitySkillCycle)
   size_t total_size = 0;
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if ((_internal_metadata_.have_unknown_fields() &&  false)) {
     total_size +=
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
+        (false   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
   }
   // bool failed = 3;
   if (this->failed() != 0) {
@@ -427,9 +429,11 @@ bool AISnapshotEntityData::MergePartialFromCodedStream(
   }
 success:
   // @@protoc_insertion_point(parse_success:proto.AISnapshotEntityData)
+  DiscardUnknownFields();
   return true;
 failure:
   // @@protoc_insertion_point(parse_failure:proto.AISnapshotEntityData)
+  DiscardUnknownFields();
   return false;
 #undef DO_
 }
@@ -536,9 +540,9 @@ void AISnapshotEntityData::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormatLite::WriteUInt32(15, this->attack_target_id(), output);
   }
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if ((_internal_metadata_.have_unknown_fields() &&  false)) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
+        (false   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
   }
   // @@protoc_insertion_point(serialize_end:proto.AISnapshotEntityData)
 }
@@ -651,9 +655,9 @@ void AISnapshotEntityData::SerializeWithCachedSizes(
     target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(15, this->attack_target_id(), target);
   }
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if ((_internal_metadata_.have_unknown_fields() &&  false)) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
+        (false   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
   }
   // @@protoc_insertion_point(serialize_to_array_end:proto.AISnapshotEntityData)
   return target;
@@ -663,10 +667,10 @@ size_t AISnapshotEntityData::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:proto.AISnapshotEntityData)
   size_t total_size = 0;
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if ((_internal_metadata_.have_unknown_fields() &&  false)) {
     total_size +=
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
+        (false   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
   }
   // repeated .proto.AISnapshotEntitySkillCycle finished_skill_cycles = 1;
   {
@@ -796,9 +800,11 @@ bool AISnapshotInfo::MergePartialFromCodedStream(
   }
 success:
   // @@protoc_insertion_point(parse_success:proto.AISnapshotInfo)
+  DiscardUnknownFields();
   return true;
 failure:
   // @@protoc_insertion_point(parse_failure:proto.AISnapshotInfo)
+  DiscardUnknownFields();
   return false;
 #undef DO_
 }
@@ -816,9 +822,9 @@ void AISnapshotInfo::SerializeWithCachedSizes(
       14, this->ai_snapshots(static_cast<int>(i)), output);
   }
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if ((_internal_metadata_.have_unknown_fields() &&  false)) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
+        (false   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
   }
   // @@protoc_insertion_point(serialize_end:proto.AISnapshotInfo)
 }
@@ -838,9 +844,9 @@ void AISnapshotInfo::SerializeWithCachedSizes(
         14, this->ai_snapshots(static_cast<int>(i)), deterministic, target);
   }
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if ((_internal_metadata_.have_unknown_fields() &&  false)) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
+        (false   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
   }
   // @@protoc_insertion_point(serialize_to_array_end:proto.AISnapshotInfo)
   return target;
@@ -850,10 +856,10 @@ size_t AISnapshotInfo::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:proto.AISnapshotInfo)
   size_t total_size = 0;
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if ((_internal_metadata_.have_unknown_fields() &&  false)) {
     total_size +=
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
+        (false   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
   }
   // repeated .proto.AISnapshotEntityData ai_snapshots = 14;
   {

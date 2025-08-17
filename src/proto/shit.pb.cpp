@@ -298,9 +298,11 @@ bool ClientSetGameTimeReq::MergePartialFromCodedStream(
   }
 success:
   // @@protoc_insertion_point(parse_success:proto.ClientSetGameTimeReq)
+  DiscardUnknownFields();
   return true;
 failure:
   // @@protoc_insertion_point(parse_failure:proto.ClientSetGameTimeReq)
+  DiscardUnknownFields();
   return false;
 #undef DO_
 }
@@ -326,9 +328,9 @@ void ClientSetGameTimeReq::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormatLite::WriteUInt32(15, this->game_time(), output);
   }
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if ((_internal_metadata_.have_unknown_fields() &&  false)) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
+        (false   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
   }
   // @@protoc_insertion_point(serialize_end:proto.ClientSetGameTimeReq)
 }
@@ -355,9 +357,9 @@ void ClientSetGameTimeReq::SerializeWithCachedSizes(
     target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(15, this->game_time(), target);
   }
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if ((_internal_metadata_.have_unknown_fields() &&  false)) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
+        (false   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
   }
   // @@protoc_insertion_point(serialize_to_array_end:proto.ClientSetGameTimeReq)
   return target;
@@ -367,10 +369,10 @@ size_t ClientSetGameTimeReq::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:proto.ClientSetGameTimeReq)
   size_t total_size = 0;
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if ((_internal_metadata_.have_unknown_fields() &&  false)) {
     total_size +=
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
+        (false   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
   }
   // uint32 client_game_time = 1;
   if (this->client_game_time() != 0) {

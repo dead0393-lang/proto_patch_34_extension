@@ -76,9 +76,11 @@ bool PlayerApplyEnterMpNotify::MergePartialFromCodedStream(
   }
 success:
   // @@protoc_insertion_point(parse_success:proto.PlayerApplyEnterMpNotify)
+  DiscardUnknownFields();
   return true;
 failure:
   // @@protoc_insertion_point(parse_failure:proto.PlayerApplyEnterMpNotify)
+  DiscardUnknownFields();
   return false;
 #undef DO_
 }
@@ -105,9 +107,9 @@ void PlayerApplyEnterMpNotify::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormatLite::WriteUInt32(14, this->src_thread_index(), output);
   }
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if ((_internal_metadata_.have_unknown_fields() &&  false)) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
+        (false   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
   }
   // @@protoc_insertion_point(serialize_end:proto.PlayerApplyEnterMpNotify)
 }
@@ -136,9 +138,9 @@ void PlayerApplyEnterMpNotify::SerializeWithCachedSizes(
     target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(14, this->src_thread_index(), target);
   }
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if ((_internal_metadata_.have_unknown_fields() &&  false)) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
+        (false   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
   }
   // @@protoc_insertion_point(serialize_to_array_end:proto.PlayerApplyEnterMpNotify)
   return target;
@@ -148,10 +150,10 @@ size_t PlayerApplyEnterMpNotify::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:proto.PlayerApplyEnterMpNotify)
   size_t total_size = 0;
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if ((_internal_metadata_.have_unknown_fields() &&  false)) {
     total_size +=
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
+        (false   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
   }
   // .proto.OnlinePlayerInfo src_player_info = 11;
   if (this->has_src_player_info()) {
@@ -217,9 +219,11 @@ bool PlayerApplyEnterMpReq::MergePartialFromCodedStream(
   }
 success:
   // @@protoc_insertion_point(parse_success:proto.PlayerApplyEnterMpReq)
+  DiscardUnknownFields();
   return true;
 failure:
   // @@protoc_insertion_point(parse_failure:proto.PlayerApplyEnterMpReq)
+  DiscardUnknownFields();
   return false;
 #undef DO_
 }
@@ -235,9 +239,9 @@ void PlayerApplyEnterMpReq::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormatLite::WriteUInt32(3, this->target_uid(), output);
   }
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if ((_internal_metadata_.have_unknown_fields() &&  false)) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
+        (false   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
   }
   // @@protoc_insertion_point(serialize_end:proto.PlayerApplyEnterMpReq)
 }
@@ -254,9 +258,9 @@ void PlayerApplyEnterMpReq::SerializeWithCachedSizes(
     target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(3, this->target_uid(), target);
   }
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if ((_internal_metadata_.have_unknown_fields() &&  false)) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
+        (false   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
   }
   // @@protoc_insertion_point(serialize_to_array_end:proto.PlayerApplyEnterMpReq)
   return target;
@@ -266,10 +270,10 @@ size_t PlayerApplyEnterMpReq::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:proto.PlayerApplyEnterMpReq)
   size_t total_size = 0;
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if ((_internal_metadata_.have_unknown_fields() &&  false)) {
     total_size +=
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
+        (false   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
   }
   // uint32 target_uid = 3;
   if (this->target_uid() != 0) {
@@ -349,9 +353,11 @@ bool PlayerApplyEnterMpRsp::MergePartialFromCodedStream(
   }
 success:
   // @@protoc_insertion_point(parse_success:proto.PlayerApplyEnterMpRsp)
+  DiscardUnknownFields();
   return true;
 failure:
   // @@protoc_insertion_point(parse_failure:proto.PlayerApplyEnterMpRsp)
+  DiscardUnknownFields();
   return false;
 #undef DO_
 }
@@ -377,9 +383,9 @@ void PlayerApplyEnterMpRsp::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormatLite::WriteInt32(11, this->retcode(), output);
   }
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if ((_internal_metadata_.have_unknown_fields() &&  false)) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
+        (false   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
   }
   // @@protoc_insertion_point(serialize_end:proto.PlayerApplyEnterMpRsp)
 }
@@ -406,9 +412,9 @@ void PlayerApplyEnterMpRsp::SerializeWithCachedSizes(
     target = ::google::protobuf::internal::WireFormatLite::WriteInt32ToArray(11, this->retcode(), target);
   }
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if ((_internal_metadata_.have_unknown_fields() &&  false)) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
+        (false   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
   }
   // @@protoc_insertion_point(serialize_to_array_end:proto.PlayerApplyEnterMpRsp)
   return target;
@@ -418,10 +424,10 @@ size_t PlayerApplyEnterMpRsp::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:proto.PlayerApplyEnterMpRsp)
   size_t total_size = 0;
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if ((_internal_metadata_.have_unknown_fields() &&  false)) {
     total_size +=
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
+        (false   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
   }
   // int32 retcode = 11;
   if (this->retcode() != 0) {
@@ -532,9 +538,11 @@ bool PlayerApplyEnterMpResultNotify::MergePartialFromCodedStream(
   }
 success:
   // @@protoc_insertion_point(parse_success:proto.PlayerApplyEnterMpResultNotify)
+  DiscardUnknownFields();
   return true;
 failure:
   // @@protoc_insertion_point(parse_failure:proto.PlayerApplyEnterMpResultNotify)
+  DiscardUnknownFields();
   return false;
 #undef DO_
 }
@@ -571,9 +579,9 @@ void PlayerApplyEnterMpResultNotify::SerializeWithCachedSizes(
       14, this->target_nickname(), output);
   }
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if ((_internal_metadata_.have_unknown_fields() &&  false)) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
+        (false   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
   }
   // @@protoc_insertion_point(serialize_end:proto.PlayerApplyEnterMpResultNotify)
 }
@@ -612,9 +620,9 @@ void PlayerApplyEnterMpResultNotify::SerializeWithCachedSizes(
         14, this->target_nickname(), target);
   }
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if ((_internal_metadata_.have_unknown_fields() &&  false)) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
+        (false   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
   }
   // @@protoc_insertion_point(serialize_to_array_end:proto.PlayerApplyEnterMpResultNotify)
   return target;
@@ -624,10 +632,10 @@ size_t PlayerApplyEnterMpResultNotify::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:proto.PlayerApplyEnterMpResultNotify)
   size_t total_size = 0;
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if ((_internal_metadata_.have_unknown_fields() &&  false)) {
     total_size +=
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
+        (false   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
   }
   // string target_nickname = 14;
   if (this->target_nickname().size() > 0) {
@@ -711,9 +719,11 @@ bool PlayerApplyEnterMpResultReq::MergePartialFromCodedStream(
   }
 success:
   // @@protoc_insertion_point(parse_success:proto.PlayerApplyEnterMpResultReq)
+  DiscardUnknownFields();
   return true;
 failure:
   // @@protoc_insertion_point(parse_failure:proto.PlayerApplyEnterMpResultReq)
+  DiscardUnknownFields();
   return false;
 #undef DO_
 }
@@ -734,9 +744,9 @@ void PlayerApplyEnterMpResultReq::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormatLite::WriteBool(6, this->is_agreed(), output);
   }
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if ((_internal_metadata_.have_unknown_fields() &&  false)) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
+        (false   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
   }
   // @@protoc_insertion_point(serialize_end:proto.PlayerApplyEnterMpResultReq)
 }
@@ -758,9 +768,9 @@ void PlayerApplyEnterMpResultReq::SerializeWithCachedSizes(
     target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(6, this->is_agreed(), target);
   }
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if ((_internal_metadata_.have_unknown_fields() &&  false)) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
+        (false   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
   }
   // @@protoc_insertion_point(serialize_to_array_end:proto.PlayerApplyEnterMpResultReq)
   return target;
@@ -770,10 +780,10 @@ size_t PlayerApplyEnterMpResultReq::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:proto.PlayerApplyEnterMpResultReq)
   size_t total_size = 0;
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if ((_internal_metadata_.have_unknown_fields() &&  false)) {
     total_size +=
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
+        (false   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
   }
   // uint32 apply_uid = 4;
   if (this->apply_uid() != 0) {
@@ -872,9 +882,11 @@ bool PlayerApplyEnterMpResultRsp::MergePartialFromCodedStream(
   }
 success:
   // @@protoc_insertion_point(parse_success:proto.PlayerApplyEnterMpResultRsp)
+  DiscardUnknownFields();
   return true;
 failure:
   // @@protoc_insertion_point(parse_failure:proto.PlayerApplyEnterMpResultRsp)
+  DiscardUnknownFields();
   return false;
 #undef DO_
 }
@@ -905,9 +917,9 @@ void PlayerApplyEnterMpResultRsp::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormatLite::WriteUInt32(10, this->apply_uid(), output);
   }
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if ((_internal_metadata_.have_unknown_fields() &&  false)) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
+        (false   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
   }
   // @@protoc_insertion_point(serialize_end:proto.PlayerApplyEnterMpResultRsp)
 }
@@ -939,9 +951,9 @@ void PlayerApplyEnterMpResultRsp::SerializeWithCachedSizes(
     target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(10, this->apply_uid(), target);
   }
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if ((_internal_metadata_.have_unknown_fields() &&  false)) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
+        (false   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
   }
   // @@protoc_insertion_point(serialize_to_array_end:proto.PlayerApplyEnterMpResultRsp)
   return target;
@@ -951,10 +963,10 @@ size_t PlayerApplyEnterMpResultRsp::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:proto.PlayerApplyEnterMpResultRsp)
   size_t total_size = 0;
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if ((_internal_metadata_.have_unknown_fields() &&  false)) {
     total_size +=
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
+        (false   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
   }
   // int32 retcode = 2;
   if (this->retcode() != 0) {
@@ -1026,9 +1038,11 @@ bool PlayerQuitFromMpNotify::MergePartialFromCodedStream(
   }
 success:
   // @@protoc_insertion_point(parse_success:proto.PlayerQuitFromMpNotify)
+  DiscardUnknownFields();
   return true;
 failure:
   // @@protoc_insertion_point(parse_failure:proto.PlayerQuitFromMpNotify)
+  DiscardUnknownFields();
   return false;
 #undef DO_
 }
@@ -1045,9 +1059,9 @@ void PlayerQuitFromMpNotify::SerializeWithCachedSizes(
       1, this->reason(), output);
   }
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if ((_internal_metadata_.have_unknown_fields() &&  false)) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
+        (false   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
   }
   // @@protoc_insertion_point(serialize_end:proto.PlayerQuitFromMpNotify)
 }
@@ -1065,9 +1079,9 @@ void PlayerQuitFromMpNotify::SerializeWithCachedSizes(
       1, this->reason(), target);
   }
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if ((_internal_metadata_.have_unknown_fields() &&  false)) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
+        (false   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
   }
   // @@protoc_insertion_point(serialize_to_array_end:proto.PlayerQuitFromMpNotify)
   return target;
@@ -1077,10 +1091,10 @@ size_t PlayerQuitFromMpNotify::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:proto.PlayerQuitFromMpNotify)
   size_t total_size = 0;
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if ((_internal_metadata_.have_unknown_fields() &&  false)) {
     total_size +=
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
+        (false   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
   }
   // .proto.PlayerQuitFromMpNotify.QuitReason reason = 1;
   if (this->reason() != 0) {
@@ -1162,9 +1176,11 @@ bool PlayerPreEnterMpNotify::MergePartialFromCodedStream(
   }
 success:
   // @@protoc_insertion_point(parse_success:proto.PlayerPreEnterMpNotify)
+  DiscardUnknownFields();
   return true;
 failure:
   // @@protoc_insertion_point(parse_failure:proto.PlayerPreEnterMpNotify)
+  DiscardUnknownFields();
   return false;
 #undef DO_
 }
@@ -1196,9 +1212,9 @@ void PlayerPreEnterMpNotify::SerializeWithCachedSizes(
       15, this->nickname(), output);
   }
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if ((_internal_metadata_.have_unknown_fields() &&  false)) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
+        (false   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
   }
   // @@protoc_insertion_point(serialize_end:proto.PlayerPreEnterMpNotify)
 }
@@ -1232,9 +1248,9 @@ void PlayerPreEnterMpNotify::SerializeWithCachedSizes(
         15, this->nickname(), target);
   }
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if ((_internal_metadata_.have_unknown_fields() &&  false)) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
+        (false   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
   }
   // @@protoc_insertion_point(serialize_to_array_end:proto.PlayerPreEnterMpNotify)
   return target;
@@ -1244,10 +1260,10 @@ size_t PlayerPreEnterMpNotify::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:proto.PlayerPreEnterMpNotify)
   size_t total_size = 0;
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if ((_internal_metadata_.have_unknown_fields() &&  false)) {
     total_size +=
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
+        (false   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
   }
   // string nickname = 15;
   if (this->nickname().size() > 0) {
@@ -1293,9 +1309,11 @@ bool GetPlayerMpModeAvailabilityReq::MergePartialFromCodedStream(
   }
 success:
   // @@protoc_insertion_point(parse_success:proto.GetPlayerMpModeAvailabilityReq)
+  DiscardUnknownFields();
   return true;
 failure:
   // @@protoc_insertion_point(parse_failure:proto.GetPlayerMpModeAvailabilityReq)
+  DiscardUnknownFields();
   return false;
 #undef DO_
 }
@@ -1306,9 +1324,9 @@ void GetPlayerMpModeAvailabilityReq::SerializeWithCachedSizes(
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if ((_internal_metadata_.have_unknown_fields() &&  false)) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
+        (false   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
   }
   // @@protoc_insertion_point(serialize_end:proto.GetPlayerMpModeAvailabilityReq)
 }
@@ -1320,9 +1338,9 @@ void GetPlayerMpModeAvailabilityReq::SerializeWithCachedSizes(
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if ((_internal_metadata_.have_unknown_fields() &&  false)) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
+        (false   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
   }
   // @@protoc_insertion_point(serialize_to_array_end:proto.GetPlayerMpModeAvailabilityReq)
   return target;
@@ -1332,10 +1350,10 @@ size_t GetPlayerMpModeAvailabilityReq::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:proto.GetPlayerMpModeAvailabilityReq)
   size_t total_size = 0;
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if ((_internal_metadata_.have_unknown_fields() &&  false)) {
     total_size +=
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
+        (false   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
   }
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
@@ -1413,9 +1431,11 @@ bool GetPlayerMpModeAvailabilityRsp::MergePartialFromCodedStream(
   }
 success:
   // @@protoc_insertion_point(parse_success:proto.GetPlayerMpModeAvailabilityRsp)
+  DiscardUnknownFields();
   return true;
 failure:
   // @@protoc_insertion_point(parse_failure:proto.GetPlayerMpModeAvailabilityRsp)
+  DiscardUnknownFields();
   return false;
 #undef DO_
 }
@@ -1447,9 +1467,9 @@ void GetPlayerMpModeAvailabilityRsp::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormatLite::WriteInt32(12, this->mp_ret(), output);
   }
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if ((_internal_metadata_.have_unknown_fields() &&  false)) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
+        (false   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
   }
   // @@protoc_insertion_point(serialize_end:proto.GetPlayerMpModeAvailabilityRsp)
 }
@@ -1484,9 +1504,9 @@ void GetPlayerMpModeAvailabilityRsp::SerializeWithCachedSizes(
     target = ::google::protobuf::internal::WireFormatLite::WriteInt32ToArray(12, this->mp_ret(), target);
   }
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if ((_internal_metadata_.have_unknown_fields() &&  false)) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
+        (false   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
   }
   // @@protoc_insertion_point(serialize_to_array_end:proto.GetPlayerMpModeAvailabilityRsp)
   return target;
@@ -1496,10 +1516,10 @@ size_t GetPlayerMpModeAvailabilityRsp::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:proto.GetPlayerMpModeAvailabilityRsp)
   size_t total_size = 0;
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if ((_internal_metadata_.have_unknown_fields() &&  false)) {
     total_size +=
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
+        (false   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
   }
   // repeated uint32 param_list = 7;
   {
@@ -1574,9 +1594,11 @@ bool PlayerSetOnlyMPWithPSPlayerReq::MergePartialFromCodedStream(
   }
 success:
   // @@protoc_insertion_point(parse_success:proto.PlayerSetOnlyMPWithPSPlayerReq)
+  DiscardUnknownFields();
   return true;
 failure:
   // @@protoc_insertion_point(parse_failure:proto.PlayerSetOnlyMPWithPSPlayerReq)
+  DiscardUnknownFields();
   return false;
 #undef DO_
 }
@@ -1592,9 +1614,9 @@ void PlayerSetOnlyMPWithPSPlayerReq::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormatLite::WriteBool(6, this->is_only(), output);
   }
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if ((_internal_metadata_.have_unknown_fields() &&  false)) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
+        (false   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
   }
   // @@protoc_insertion_point(serialize_end:proto.PlayerSetOnlyMPWithPSPlayerReq)
 }
@@ -1611,9 +1633,9 @@ void PlayerSetOnlyMPWithPSPlayerReq::SerializeWithCachedSizes(
     target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(6, this->is_only(), target);
   }
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if ((_internal_metadata_.have_unknown_fields() &&  false)) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
+        (false   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
   }
   // @@protoc_insertion_point(serialize_to_array_end:proto.PlayerSetOnlyMPWithPSPlayerReq)
   return target;
@@ -1623,10 +1645,10 @@ size_t PlayerSetOnlyMPWithPSPlayerReq::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:proto.PlayerSetOnlyMPWithPSPlayerReq)
   size_t total_size = 0;
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if ((_internal_metadata_.have_unknown_fields() &&  false)) {
     total_size +=
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
+        (false   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
   }
   // bool is_only = 6;
   if (this->is_only() != 0) {
@@ -1690,9 +1712,11 @@ bool PlayerSetOnlyMPWithPSPlayerRsp::MergePartialFromCodedStream(
   }
 success:
   // @@protoc_insertion_point(parse_success:proto.PlayerSetOnlyMPWithPSPlayerRsp)
+  DiscardUnknownFields();
   return true;
 failure:
   // @@protoc_insertion_point(parse_failure:proto.PlayerSetOnlyMPWithPSPlayerRsp)
+  DiscardUnknownFields();
   return false;
 #undef DO_
 }
@@ -1713,9 +1737,9 @@ void PlayerSetOnlyMPWithPSPlayerRsp::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormatLite::WriteBool(10, this->is_only(), output);
   }
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if ((_internal_metadata_.have_unknown_fields() &&  false)) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
+        (false   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
   }
   // @@protoc_insertion_point(serialize_end:proto.PlayerSetOnlyMPWithPSPlayerRsp)
 }
@@ -1737,9 +1761,9 @@ void PlayerSetOnlyMPWithPSPlayerRsp::SerializeWithCachedSizes(
     target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(10, this->is_only(), target);
   }
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if ((_internal_metadata_.have_unknown_fields() &&  false)) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
+        (false   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
   }
   // @@protoc_insertion_point(serialize_to_array_end:proto.PlayerSetOnlyMPWithPSPlayerRsp)
   return target;
@@ -1749,10 +1773,10 @@ size_t PlayerSetOnlyMPWithPSPlayerRsp::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:proto.PlayerSetOnlyMPWithPSPlayerRsp)
   size_t total_size = 0;
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if ((_internal_metadata_.have_unknown_fields() &&  false)) {
     total_size +=
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
+        (false   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
   }
   // int32 retcode = 2;
   if (this->retcode() != 0) {
@@ -1811,9 +1835,11 @@ bool PSPlayerApplyEnterMpReq::MergePartialFromCodedStream(
   }
 success:
   // @@protoc_insertion_point(parse_success:proto.PSPlayerApplyEnterMpReq)
+  DiscardUnknownFields();
   return true;
 failure:
   // @@protoc_insertion_point(parse_failure:proto.PSPlayerApplyEnterMpReq)
+  DiscardUnknownFields();
   return false;
 #undef DO_
 }
@@ -1834,9 +1860,9 @@ void PSPlayerApplyEnterMpReq::SerializeWithCachedSizes(
       6, this->target_psn_id(), output);
   }
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if ((_internal_metadata_.have_unknown_fields() &&  false)) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
+        (false   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
   }
   // @@protoc_insertion_point(serialize_end:proto.PSPlayerApplyEnterMpReq)
 }
@@ -1859,9 +1885,9 @@ void PSPlayerApplyEnterMpReq::SerializeWithCachedSizes(
         6, this->target_psn_id(), target);
   }
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if ((_internal_metadata_.have_unknown_fields() &&  false)) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
+        (false   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
   }
   // @@protoc_insertion_point(serialize_to_array_end:proto.PSPlayerApplyEnterMpReq)
   return target;
@@ -1871,10 +1897,10 @@ size_t PSPlayerApplyEnterMpReq::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:proto.PSPlayerApplyEnterMpReq)
   size_t total_size = 0;
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if ((_internal_metadata_.have_unknown_fields() &&  false)) {
     total_size +=
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
+        (false   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
   }
   // string target_psn_id = 6;
   if (this->target_psn_id().size() > 0) {
@@ -1956,9 +1982,11 @@ bool PSPlayerApplyEnterMpRsp::MergePartialFromCodedStream(
   }
 success:
   // @@protoc_insertion_point(parse_success:proto.PSPlayerApplyEnterMpRsp)
+  DiscardUnknownFields();
   return true;
 failure:
   // @@protoc_insertion_point(parse_failure:proto.PSPlayerApplyEnterMpRsp)
+  DiscardUnknownFields();
   return false;
 #undef DO_
 }
@@ -1989,9 +2017,9 @@ void PSPlayerApplyEnterMpRsp::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormatLite::WriteUInt32(14, this->param(), output);
   }
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if ((_internal_metadata_.have_unknown_fields() &&  false)) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
+        (false   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
   }
   // @@protoc_insertion_point(serialize_end:proto.PSPlayerApplyEnterMpRsp)
 }
@@ -2024,9 +2052,9 @@ void PSPlayerApplyEnterMpRsp::SerializeWithCachedSizes(
     target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(14, this->param(), target);
   }
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if ((_internal_metadata_.have_unknown_fields() &&  false)) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
+        (false   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
   }
   // @@protoc_insertion_point(serialize_to_array_end:proto.PSPlayerApplyEnterMpRsp)
   return target;
@@ -2036,10 +2064,10 @@ size_t PSPlayerApplyEnterMpRsp::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:proto.PSPlayerApplyEnterMpRsp)
   size_t total_size = 0;
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if ((_internal_metadata_.have_unknown_fields() &&  false)) {
     total_size +=
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
+        (false   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
   }
   // string target_psn_id = 3;
   if (this->target_psn_id().size() > 0) {
@@ -2119,9 +2147,11 @@ bool MpPlayOwnerCheckReq::MergePartialFromCodedStream(
   }
 success:
   // @@protoc_insertion_point(parse_success:proto.MpPlayOwnerCheckReq)
+  DiscardUnknownFields();
   return true;
 failure:
   // @@protoc_insertion_point(parse_failure:proto.MpPlayOwnerCheckReq)
+  DiscardUnknownFields();
   return false;
 #undef DO_
 }
@@ -2142,9 +2172,9 @@ void MpPlayOwnerCheckReq::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormatLite::WriteUInt32(13, this->mp_play_id(), output);
   }
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if ((_internal_metadata_.have_unknown_fields() &&  false)) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
+        (false   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
   }
   // @@protoc_insertion_point(serialize_end:proto.MpPlayOwnerCheckReq)
 }
@@ -2166,9 +2196,9 @@ void MpPlayOwnerCheckReq::SerializeWithCachedSizes(
     target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(13, this->mp_play_id(), target);
   }
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if ((_internal_metadata_.have_unknown_fields() &&  false)) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
+        (false   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
   }
   // @@protoc_insertion_point(serialize_to_array_end:proto.MpPlayOwnerCheckReq)
   return target;
@@ -2178,10 +2208,10 @@ size_t MpPlayOwnerCheckReq::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:proto.MpPlayOwnerCheckReq)
   size_t total_size = 0;
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if ((_internal_metadata_.have_unknown_fields() &&  false)) {
     total_size +=
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
+        (false   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
   }
   // bool is_skip_match = 5;
   if (this->is_skip_match() != 0) {
@@ -2280,9 +2310,11 @@ bool MpPlayOwnerCheckRsp::MergePartialFromCodedStream(
   }
 success:
   // @@protoc_insertion_point(parse_success:proto.MpPlayOwnerCheckRsp)
+  DiscardUnknownFields();
   return true;
 failure:
   // @@protoc_insertion_point(parse_failure:proto.MpPlayOwnerCheckRsp)
+  DiscardUnknownFields();
   return false;
 #undef DO_
 }
@@ -2313,9 +2345,9 @@ void MpPlayOwnerCheckRsp::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormatLite::WriteUInt32(15, this->wrong_uid(), output);
   }
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if ((_internal_metadata_.have_unknown_fields() &&  false)) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
+        (false   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
   }
   // @@protoc_insertion_point(serialize_end:proto.MpPlayOwnerCheckRsp)
 }
@@ -2347,9 +2379,9 @@ void MpPlayOwnerCheckRsp::SerializeWithCachedSizes(
     target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(15, this->wrong_uid(), target);
   }
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if ((_internal_metadata_.have_unknown_fields() &&  false)) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
+        (false   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
   }
   // @@protoc_insertion_point(serialize_to_array_end:proto.MpPlayOwnerCheckRsp)
   return target;
@@ -2359,10 +2391,10 @@ size_t MpPlayOwnerCheckRsp::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:proto.MpPlayOwnerCheckRsp)
   size_t total_size = 0;
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if ((_internal_metadata_.have_unknown_fields() &&  false)) {
     total_size +=
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
+        (false   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
   }
   // uint32 mp_play_id = 4;
   if (this->mp_play_id() != 0) {
@@ -2447,9 +2479,11 @@ bool MpPlayOwnerStartInviteReq::MergePartialFromCodedStream(
   }
 success:
   // @@protoc_insertion_point(parse_success:proto.MpPlayOwnerStartInviteReq)
+  DiscardUnknownFields();
   return true;
 failure:
   // @@protoc_insertion_point(parse_failure:proto.MpPlayOwnerStartInviteReq)
+  DiscardUnknownFields();
   return false;
 #undef DO_
 }
@@ -2470,9 +2504,9 @@ void MpPlayOwnerStartInviteReq::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormatLite::WriteBool(13, this->is_skip_match(), output);
   }
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if ((_internal_metadata_.have_unknown_fields() &&  false)) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
+        (false   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
   }
   // @@protoc_insertion_point(serialize_end:proto.MpPlayOwnerStartInviteReq)
 }
@@ -2494,9 +2528,9 @@ void MpPlayOwnerStartInviteReq::SerializeWithCachedSizes(
     target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(13, this->is_skip_match(), target);
   }
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if ((_internal_metadata_.have_unknown_fields() &&  false)) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
+        (false   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
   }
   // @@protoc_insertion_point(serialize_to_array_end:proto.MpPlayOwnerStartInviteReq)
   return target;
@@ -2506,10 +2540,10 @@ size_t MpPlayOwnerStartInviteReq::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:proto.MpPlayOwnerStartInviteReq)
   size_t total_size = 0;
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if ((_internal_metadata_.have_unknown_fields() &&  false)) {
     total_size +=
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
+        (false   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
   }
   // uint32 mp_play_id = 10;
   if (this->mp_play_id() != 0) {
@@ -2594,9 +2628,11 @@ bool MpPlayOwnerStartInviteRsp::MergePartialFromCodedStream(
   }
 success:
   // @@protoc_insertion_point(parse_success:proto.MpPlayOwnerStartInviteRsp)
+  DiscardUnknownFields();
   return true;
 failure:
   // @@protoc_insertion_point(parse_failure:proto.MpPlayOwnerStartInviteRsp)
+  DiscardUnknownFields();
   return false;
 #undef DO_
 }
@@ -2622,9 +2658,9 @@ void MpPlayOwnerStartInviteRsp::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormatLite::WriteInt32(8, this->retcode(), output);
   }
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if ((_internal_metadata_.have_unknown_fields() &&  false)) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
+        (false   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
   }
   // @@protoc_insertion_point(serialize_end:proto.MpPlayOwnerStartInviteRsp)
 }
@@ -2651,9 +2687,9 @@ void MpPlayOwnerStartInviteRsp::SerializeWithCachedSizes(
     target = ::google::protobuf::internal::WireFormatLite::WriteInt32ToArray(8, this->retcode(), target);
   }
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if ((_internal_metadata_.have_unknown_fields() &&  false)) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
+        (false   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
   }
   // @@protoc_insertion_point(serialize_to_array_end:proto.MpPlayOwnerStartInviteRsp)
   return target;
@@ -2663,10 +2699,10 @@ size_t MpPlayOwnerStartInviteRsp::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:proto.MpPlayOwnerStartInviteRsp)
   size_t total_size = 0;
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if ((_internal_metadata_.have_unknown_fields() &&  false)) {
     total_size +=
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
+        (false   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
   }
   // int32 retcode = 8;
   if (this->retcode() != 0) {
@@ -2758,9 +2794,11 @@ bool MpPlayOwnerInviteNotify::MergePartialFromCodedStream(
   }
 success:
   // @@protoc_insertion_point(parse_success:proto.MpPlayOwnerInviteNotify)
+  DiscardUnknownFields();
   return true;
 failure:
   // @@protoc_insertion_point(parse_failure:proto.MpPlayOwnerInviteNotify)
+  DiscardUnknownFields();
   return false;
 #undef DO_
 }
@@ -2786,9 +2824,9 @@ void MpPlayOwnerInviteNotify::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormatLite::WriteBool(9, this->is_remain_reward(), output);
   }
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if ((_internal_metadata_.have_unknown_fields() &&  false)) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
+        (false   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
   }
   // @@protoc_insertion_point(serialize_end:proto.MpPlayOwnerInviteNotify)
 }
@@ -2815,9 +2853,9 @@ void MpPlayOwnerInviteNotify::SerializeWithCachedSizes(
     target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(9, this->is_remain_reward(), target);
   }
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if ((_internal_metadata_.have_unknown_fields() &&  false)) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
+        (false   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
   }
   // @@protoc_insertion_point(serialize_to_array_end:proto.MpPlayOwnerInviteNotify)
   return target;
@@ -2827,10 +2865,10 @@ size_t MpPlayOwnerInviteNotify::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:proto.MpPlayOwnerInviteNotify)
   size_t total_size = 0;
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if ((_internal_metadata_.have_unknown_fields() &&  false)) {
     total_size +=
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
+        (false   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
   }
   // bool is_remain_reward = 9;
   if (this->is_remain_reward() != 0) {
@@ -2908,9 +2946,11 @@ bool MpPlayGuestReplyInviteReq::MergePartialFromCodedStream(
   }
 success:
   // @@protoc_insertion_point(parse_success:proto.MpPlayGuestReplyInviteReq)
+  DiscardUnknownFields();
   return true;
 failure:
   // @@protoc_insertion_point(parse_failure:proto.MpPlayGuestReplyInviteReq)
+  DiscardUnknownFields();
   return false;
 #undef DO_
 }
@@ -2931,9 +2971,9 @@ void MpPlayGuestReplyInviteReq::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormatLite::WriteBool(7, this->is_agree(), output);
   }
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if ((_internal_metadata_.have_unknown_fields() &&  false)) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
+        (false   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
   }
   // @@protoc_insertion_point(serialize_end:proto.MpPlayGuestReplyInviteReq)
 }
@@ -2955,9 +2995,9 @@ void MpPlayGuestReplyInviteReq::SerializeWithCachedSizes(
     target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(7, this->is_agree(), target);
   }
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if ((_internal_metadata_.have_unknown_fields() &&  false)) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
+        (false   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
   }
   // @@protoc_insertion_point(serialize_to_array_end:proto.MpPlayGuestReplyInviteReq)
   return target;
@@ -2967,10 +3007,10 @@ size_t MpPlayGuestReplyInviteReq::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:proto.MpPlayGuestReplyInviteReq)
   size_t total_size = 0;
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if ((_internal_metadata_.have_unknown_fields() &&  false)) {
     total_size +=
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
+        (false   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
   }
   // uint32 mp_play_id = 6;
   if (this->mp_play_id() != 0) {
@@ -3041,9 +3081,11 @@ bool MpPlayGuestReplyInviteRsp::MergePartialFromCodedStream(
   }
 success:
   // @@protoc_insertion_point(parse_success:proto.MpPlayGuestReplyInviteRsp)
+  DiscardUnknownFields();
   return true;
 failure:
   // @@protoc_insertion_point(parse_failure:proto.MpPlayGuestReplyInviteRsp)
+  DiscardUnknownFields();
   return false;
 #undef DO_
 }
@@ -3064,9 +3106,9 @@ void MpPlayGuestReplyInviteRsp::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormatLite::WriteUInt32(14, this->mp_play_id(), output);
   }
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if ((_internal_metadata_.have_unknown_fields() &&  false)) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
+        (false   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
   }
   // @@protoc_insertion_point(serialize_end:proto.MpPlayGuestReplyInviteRsp)
 }
@@ -3088,9 +3130,9 @@ void MpPlayGuestReplyInviteRsp::SerializeWithCachedSizes(
     target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(14, this->mp_play_id(), target);
   }
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if ((_internal_metadata_.have_unknown_fields() &&  false)) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
+        (false   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
   }
   // @@protoc_insertion_point(serialize_to_array_end:proto.MpPlayGuestReplyInviteRsp)
   return target;
@@ -3100,10 +3142,10 @@ size_t MpPlayGuestReplyInviteRsp::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:proto.MpPlayGuestReplyInviteRsp)
   size_t total_size = 0;
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if ((_internal_metadata_.have_unknown_fields() &&  false)) {
     total_size +=
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
+        (false   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
   }
   // int32 retcode = 13;
   if (this->retcode() != 0) {
@@ -3190,9 +3232,11 @@ bool MpPlayGuestReplyNotify::MergePartialFromCodedStream(
   }
 success:
   // @@protoc_insertion_point(parse_success:proto.MpPlayGuestReplyNotify)
+  DiscardUnknownFields();
   return true;
 failure:
   // @@protoc_insertion_point(parse_failure:proto.MpPlayGuestReplyNotify)
+  DiscardUnknownFields();
   return false;
 #undef DO_
 }
@@ -3218,9 +3262,9 @@ void MpPlayGuestReplyNotify::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormatLite::WriteUInt32(12, this->mp_play_id(), output);
   }
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if ((_internal_metadata_.have_unknown_fields() &&  false)) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
+        (false   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
   }
   // @@protoc_insertion_point(serialize_end:proto.MpPlayGuestReplyNotify)
 }
@@ -3247,9 +3291,9 @@ void MpPlayGuestReplyNotify::SerializeWithCachedSizes(
     target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(12, this->mp_play_id(), target);
   }
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if ((_internal_metadata_.have_unknown_fields() &&  false)) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
+        (false   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
   }
   // @@protoc_insertion_point(serialize_to_array_end:proto.MpPlayGuestReplyNotify)
   return target;
@@ -3259,10 +3303,10 @@ size_t MpPlayGuestReplyNotify::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:proto.MpPlayGuestReplyNotify)
   size_t total_size = 0;
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if ((_internal_metadata_.have_unknown_fields() &&  false)) {
     total_size +=
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
+        (false   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
   }
   // uint32 mp_play_id = 12;
   if (this->mp_play_id() != 0) {
@@ -3340,9 +3384,11 @@ bool MpPlayPrepareNotify::MergePartialFromCodedStream(
   }
 success:
   // @@protoc_insertion_point(parse_success:proto.MpPlayPrepareNotify)
+  DiscardUnknownFields();
   return true;
 failure:
   // @@protoc_insertion_point(parse_failure:proto.MpPlayPrepareNotify)
+  DiscardUnknownFields();
   return false;
 #undef DO_
 }
@@ -3363,9 +3409,9 @@ void MpPlayPrepareNotify::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormatLite::WriteUInt32(2, this->prepare_end_time(), output);
   }
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if ((_internal_metadata_.have_unknown_fields() &&  false)) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
+        (false   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
   }
   // @@protoc_insertion_point(serialize_end:proto.MpPlayPrepareNotify)
 }
@@ -3387,9 +3433,9 @@ void MpPlayPrepareNotify::SerializeWithCachedSizes(
     target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(2, this->prepare_end_time(), target);
   }
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if ((_internal_metadata_.have_unknown_fields() &&  false)) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
+        (false   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
   }
   // @@protoc_insertion_point(serialize_to_array_end:proto.MpPlayPrepareNotify)
   return target;
@@ -3399,10 +3445,10 @@ size_t MpPlayPrepareNotify::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:proto.MpPlayPrepareNotify)
   size_t total_size = 0;
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if ((_internal_metadata_.have_unknown_fields() &&  false)) {
     total_size +=
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
+        (false   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
   }
   // uint32 mp_play_id = 1;
   if (this->mp_play_id() != 0) {
@@ -3475,9 +3521,11 @@ bool MpPlayInviteResultNotify::MergePartialFromCodedStream(
   }
 success:
   // @@protoc_insertion_point(parse_success:proto.MpPlayInviteResultNotify)
+  DiscardUnknownFields();
   return true;
 failure:
   // @@protoc_insertion_point(parse_failure:proto.MpPlayInviteResultNotify)
+  DiscardUnknownFields();
   return false;
 #undef DO_
 }
@@ -3498,9 +3546,9 @@ void MpPlayInviteResultNotify::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormatLite::WriteBool(10, this->all_argee(), output);
   }
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if ((_internal_metadata_.have_unknown_fields() &&  false)) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
+        (false   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
   }
   // @@protoc_insertion_point(serialize_end:proto.MpPlayInviteResultNotify)
 }
@@ -3522,9 +3570,9 @@ void MpPlayInviteResultNotify::SerializeWithCachedSizes(
     target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(10, this->all_argee(), target);
   }
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if ((_internal_metadata_.have_unknown_fields() &&  false)) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
+        (false   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
   }
   // @@protoc_insertion_point(serialize_to_array_end:proto.MpPlayInviteResultNotify)
   return target;
@@ -3534,10 +3582,10 @@ size_t MpPlayInviteResultNotify::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:proto.MpPlayInviteResultNotify)
   size_t total_size = 0;
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if ((_internal_metadata_.have_unknown_fields() &&  false)) {
     total_size +=
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
+        (false   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
   }
   // uint32 mp_play_id = 5;
   if (this->mp_play_id() != 0) {
@@ -3594,9 +3642,11 @@ bool MpPlayPrepareInterruptNotify::MergePartialFromCodedStream(
   }
 success:
   // @@protoc_insertion_point(parse_success:proto.MpPlayPrepareInterruptNotify)
+  DiscardUnknownFields();
   return true;
 failure:
   // @@protoc_insertion_point(parse_failure:proto.MpPlayPrepareInterruptNotify)
+  DiscardUnknownFields();
   return false;
 #undef DO_
 }
@@ -3612,9 +3662,9 @@ void MpPlayPrepareInterruptNotify::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormatLite::WriteUInt32(10, this->mp_play_id(), output);
   }
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if ((_internal_metadata_.have_unknown_fields() &&  false)) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
+        (false   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
   }
   // @@protoc_insertion_point(serialize_end:proto.MpPlayPrepareInterruptNotify)
 }
@@ -3631,9 +3681,9 @@ void MpPlayPrepareInterruptNotify::SerializeWithCachedSizes(
     target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(10, this->mp_play_id(), target);
   }
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if ((_internal_metadata_.have_unknown_fields() &&  false)) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
+        (false   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
   }
   // @@protoc_insertion_point(serialize_to_array_end:proto.MpPlayPrepareInterruptNotify)
   return target;
@@ -3643,10 +3693,10 @@ size_t MpPlayPrepareInterruptNotify::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:proto.MpPlayPrepareInterruptNotify)
   size_t total_size = 0;
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if ((_internal_metadata_.have_unknown_fields() &&  false)) {
     total_size +=
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
+        (false   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
   }
   // uint32 mp_play_id = 10;
   if (this->mp_play_id() != 0) {
@@ -3698,9 +3748,11 @@ bool MpBlockNotify::MergePartialFromCodedStream(
   }
 success:
   // @@protoc_insertion_point(parse_success:proto.MpBlockNotify)
+  DiscardUnknownFields();
   return true;
 failure:
   // @@protoc_insertion_point(parse_failure:proto.MpBlockNotify)
+  DiscardUnknownFields();
   return false;
 #undef DO_
 }
@@ -3716,9 +3768,9 @@ void MpBlockNotify::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormatLite::WriteUInt32(13, this->end_time(), output);
   }
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if ((_internal_metadata_.have_unknown_fields() &&  false)) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
+        (false   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
   }
   // @@protoc_insertion_point(serialize_end:proto.MpBlockNotify)
 }
@@ -3735,9 +3787,9 @@ void MpBlockNotify::SerializeWithCachedSizes(
     target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(13, this->end_time(), target);
   }
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if ((_internal_metadata_.have_unknown_fields() &&  false)) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
+        (false   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
   }
   // @@protoc_insertion_point(serialize_to_array_end:proto.MpBlockNotify)
   return target;
@@ -3747,10 +3799,10 @@ size_t MpBlockNotify::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:proto.MpBlockNotify)
   size_t total_size = 0;
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if ((_internal_metadata_.have_unknown_fields() &&  false)) {
     total_size +=
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
+        (false   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
   }
   // uint32 end_time = 13;
   if (this->end_time() != 0) {

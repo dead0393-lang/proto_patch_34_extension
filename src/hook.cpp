@@ -95,7 +95,7 @@ __int64 convertPacketToString_Fake(std::shared_ptr<common::minet::Packet> packet
     }
     
     common::minet::Packet *packet = packet_ptr.get();
-    std::string cmd_name = *getCmdName(packet->cmd_id);
+    std::string cmd_name = *getCmdName(packet->getCmdId());
     
     
     std::list<std::string>& cmd_name_filter_list = getCmdNameFilterList();
@@ -104,15 +104,14 @@ __int64 convertPacketToString_Fake(std::shared_ptr<common::minet::Packet> packet
 
     if (it != cmd_name_filter_list.end()) {
         
-        uint16_t las;
-        getProto(&las,packet);
-        std::shared_ptr<google::protobuf::Message> *message_ptr=(std::shared_ptr<google::protobuf::Message>*)&las;
-        google::protobuf::Message *message=message_ptr->get();
+        
+        common::minet::MessagePtr message_ptr=packet->getProto();
+        google::protobuf::Message *message=message_ptr.get();
         nlohmann::json json;
-        unsigned int uid =packet->head_.user_id();
+        unsigned int uid =packet->getHead().user_id();
         Pb2Json::Message2Json(*message,json,true);
         std::string bodystr=json.dump();
-        message_ptr->reset();
+        message_ptr.reset();
         INFO("cmd: %s. found in cmd_name_filter_list,reporting\n" , cmd_name.c_str());
         httplib::Client cli(get_api_server());
         httplib::Result res = cli.Post(str_format("%s?region=%s&uid=%d&cmd_name=%s",get_api_path().c_str(),region_name.c_str(),uid,cmd_name.c_str()),bodystr, "text/plain");

@@ -25,7 +25,9 @@ jobs:
         apt-get update -y
         apt-get install -y make gcc g++   # или build-essential, если нужен полный набор
     - name: make
-      run: make
+      run: |
+        make clean || true
+        CXXFLAGS="-D_GLIBCXX_USE_CXX11_ABI=0 -O2" make
     - name: Upload build
       uses: actions/upload-artifact@v4
       with:

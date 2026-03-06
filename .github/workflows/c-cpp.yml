@@ -29,5 +29,7 @@ jobs:
     - name: Upload build
       uses: actions/upload-artifact@v4
       with:
-        name: libhook.so
-        path: lib/libhook.so
+        name: libhook-proto
+        path: |
+          **/*.so
+        if-no-files-found: error

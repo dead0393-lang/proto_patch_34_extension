@@ -4944,6 +4944,10 @@ std::map<std::string,std::string> getProtoHookMap() {
       "_ZN5proto22BrickBreakerDetailInfo27MergePartialFromCodedStreamEPN6google8protobuf2io16CodedInputStreamE"
     },
     {
+      "_ZN5proto22BrickBreakerDetailInfo40BrickBreakerDetailInfo_SkillInfoMapEntry9MergeFromERKN6google8protobuf7MessageE",
+      "_ZN5proto22BrickBreakerDetailInfo40BrickBreakerDetailInfo_SkillInfoMapEntry9MergeFromERKN6google8protobuf7MessageE"  // fuck
+    },
+    {
       "_ZN5proto22BuoyantCombatDailyInfo27MergePartialFromCodedStreamEPN6google8protobuf2io16CodedInputStreamE",
       "_ZN5proto22BuoyantCombatDailyInfo27MergePartialFromCodedStreamEPN6google8protobuf2io16CodedInputStreamE"
     },
